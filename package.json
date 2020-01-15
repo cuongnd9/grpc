@@ -1,0 +1,9 @@
+{
+  "name": "grpc-starter",
+  "version": "1.0.0",
+  "description": "🚀 gRPC starter 🛰️",
+  "main": "index.js",
+  "repository": "https://github.com/cuongw/grpc-starter",
+  "author": "Kim Cuong",
+  "license": "MIT"
+}
