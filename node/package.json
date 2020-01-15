@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/cuongw/grpc-starter",
   "author": "Kim Cuong",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "grpc": "^1.24.2",
+    "thinid": "^0.5.5"
+  }
 }
