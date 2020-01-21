@@ -1,0 +1,14 @@
+syntax = "proto3";
+service CatService {
+  rpc List (Empty) returns (CatList) {}
+}
+message Empty {}
+message Cat {
+  string id = 1;
+  string name = 2;
+  string color = 3;
+  string image = 4;
+}
+message CatList {
+  repeated Cat cats = 1;
+}
