@@ -1,6 +1,7 @@
 syntax = "proto3";
 service CatService {
   rpc List (Empty) returns (CatList) {}
+  rpc Insert (Cat) returns (Cat) {}
 }
 message Empty {}
 message Cat {
