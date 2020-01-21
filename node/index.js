@@ -29,6 +29,17 @@ server.addService(catsProto.CatService.service, {
     cat.id = thinid();
     cats.push(cat);
     callback(null, cat);
+  },
+  update: (call, callback) => {
+    const updatedCat = call.request;
+    const index = cats.findIndex(item => item.id === updatedCat.id);
+    cats.splice(index, 1, updatedCat);
+    callback(null, updatedCat);
+  },
+  delete: (call, callback) => {
+    const deletedId = call.request;
+    cats.splice(deletedId, 1);
+    callback(null, deletedId);
   }
 })
 server.bind('127.0.0.1:50051', grpc.ServerCredentials.createInsecure());
