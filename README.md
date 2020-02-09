@@ -1,6 +1,6 @@
-# grpc-starter
+# grpc
 
-🚀 gRPC starter 🛰️
+🌏 Explore 🚀 gRPC
 
 <p>
   <img src='./images/rocket-raccoon.gif' height=200 />
