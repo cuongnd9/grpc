@@ -1,0 +1,12 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Cuong Duy Tran Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "giin": "^0.1.2",
+    "thinid": "^0.5.5",
+    "viee": "^0.5.0"
+  }
+}
