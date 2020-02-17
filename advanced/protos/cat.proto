@@ -8,7 +8,7 @@ service CatService {
   rpc readCat (CatId) returns (Cat) {}
   rpc createCat (NewCat) returns (Cat) {}
   rpc updateCat (Cat) returns (Cat) {}
-  rpc deleteCat (CatId) return (Cat) {}
+  rpc deleteCat (CatId) returns (Cat) {}
 }
 
 // define message
