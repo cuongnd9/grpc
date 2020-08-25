@@ -1,5 +1,5 @@
 const grpc = require('grpc');
-const { thinid } = require('thinid');
+const { diana } = require('diana-js');
 
 const cats = [
   {
@@ -26,7 +26,7 @@ server.addService(catsProto.CatService.service, {
   },
   insert: (call, callback) => {
     const cat = call.request;
-    cat.id = thinid();
+    cat.id = diana();
     cats.push(cat);
     callback(null, cat);
   },
