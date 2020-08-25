@@ -1,0 +1,55 @@
+syntax="proto3";
+
+package v1;
+
+service CatService {
+    rpc ReadAll (ReadAllRequest) returns (ReadAllResponse) {}
+    rpc Read (ReadRequest) returns (ReadResponse) {}
+    rpc Create (CreateRequest) returns (CreateResponse) {}
+    rpc Update (UpdateRequest) returns (UpdateResponse) {}
+    rpc Delete (DeleteRequest) returns (DeleteResponse) {}
+}
+
+message ReadAllRequest {}
+
+message ReadAllResponse {
+  repeated Cat cats = 1;
+}
+
+message ReadRequest {
+  string id = 1;
+}
+
+message ReadResponse {
+  Cat cat = 1;
+}
+
+message  CreateRequest {
+  Cat cat = 1;
+}
+
+message  CreateResponse {
+  Cat cat = 1;
+}
+
+message  UpdateRequest {
+  Cat cat = 1;
+}
+
+message  UpdateResponse {
+  Cat cat = 1;
+}
+
+message DeleteRequest {
+  string id = 1;
+}
+
+message DeleteResponse {
+  bool deleted = 1;
+}
+
+message Cat {
+  string id = 1;
+  string name = 2;
+  string color = 3;
+}

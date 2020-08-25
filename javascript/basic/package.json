@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "🚀 gRPC starter 🛰️",
   "main": "index.js",
-  "repository": "https://github.com/cuongw/grpc-starter",
+  "repository": "https://github.com/103cuong/grpc",
   "author": "Kim Cuong",
   "license": "MIT",
   "dependencies": {
+    "diana-js": "^0.7.0",
     "grpc": "^1.24.2",
+    "hades-ts": "^0.1.0",
+    "hera-js": "^0.4.0",
+    "juno-js": "^0.1.1",
     "thinid": "^0.5.5"
   },
   "scripts": {
